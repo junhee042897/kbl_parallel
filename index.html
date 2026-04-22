@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KBL Parallel Coordinates</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>KBL Parallel Coordinates</h1>
+
+  <div style="margin-bottom: 16px;">
+    <label for="seasonFilter">Season: </label>
+    <select id="seasonFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label for="resultFilter" style="margin-left: 20px;">Result: </label>
+    <select id="resultFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label for="teamFilter" style="margin-left: 20px;">Team: </label>
+    <select id="teamFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label for="rankFilter" style="margin-left: 20px;">Rank: </label>
+    <select id="rankFilter">
+      <option value="all">All</option>
+    </select>
+  </div>
+
+  <div id="info" style="margin: 10px 0; font-weight: bold;"></div>
+  <div id="chart"></div>
+  <div id="tooltip"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

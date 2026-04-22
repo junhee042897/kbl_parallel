@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f8f9fa;
+}
+
+#chart {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.axis text {
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  stroke: #666;
+}
+
+.line {
+  transition: opacity 0.1s ease;
+}
+
+.brush .selection {
+  fill: rgba(70, 130, 180, 0.25);
+  stroke: steelblue;
+}
