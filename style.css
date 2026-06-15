@@ -4,12 +4,38 @@ body {
   background: #f8f9fa;
 }
 
+h1, h2 {
+  margin-bottom: 12px;
+}
+
+.controls {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  font-weight: 600;
+}
+
+.controls select {
+  padding: 4px 8px;
+}
+
+#info {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
 #chart {
   width: 100%;
   overflow-x: auto;
   background: white;
   border: 1px solid #ddd;
   padding: 10px;
+  margin-bottom: 24px;
 }
 
 #tooltip {
@@ -41,4 +67,46 @@ body {
 .brush .selection {
   fill: rgba(70, 130, 180, 0.25);
   stroke: steelblue;
+}
+
+#tableInfo {
+  margin: 8px 0 10px 0;
+  font-weight: bold;
+}
+
+#tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#dataTable {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1200px;
+  font-size: 13px;
+}
+
+#dataTable th,
+#dataTable td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#dataTable thead {
+  background: #f1f3f5;
+  position: sticky;
+  top: 0;
+}
+
+#dataTable tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+#dataTable tbody tr:hover {
+  background: #eef6ff;
 }
